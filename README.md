@@ -1,4 +1,4 @@
-# OmniAuth Paymill
+# OmniAuth Paymill [![Build Status](https://travis-ci.org/groupbuddies/omniauth-paymill.svg?branch=master)](https://travis-ci.org/groupbuddies/omniauth-paymill)
 
 This gem contains the [Paymill Connect](https://www.paymill.com/tr-tr/documentation-3/add-ons/connect/) strategy for OmniAuth.
 
@@ -45,48 +45,51 @@ The available scopes are detailed on the [Paymill Connect documentation](https:/
 ## Authentication Hash
 An example auth hash available in `request.env['omniauth.auth']`:
 
-```ruby
-{
-    "access_token": "55727e05094c17ef44649a1710b00d57",
-    "expires_in": null,
-    "token_type": "bearer",
-    "scope": "transactions_rw refunds_rw",
-    "refresh_token": "07fda540e5283039683f6400651b5eaf",
-    "merchant_id": "mer_1d70acbf80c8c35ce83680715c06be0d15c06be0d",
-    "is_active": true,
-    "methods": ["visa", "mastercard"],
-    "currencies": ["EUR", "GPB],
-    "payment_methods": [
-        {
-            "type": "visa",
-            "currency": "EUR",
-            "acquirer": "wirecard"
+    {
+        "access_token": "55727e05094c17ef44649a1710b00d57",
+        "expires_in": null,
+        "token_type": "bearer",
+        "scope": "transactions_rw refunds_rw",
+        "refresh_token": "07fda540e5283039683f6400651b5eaf",
+        "merchant_id": "mer_1d70acbf80c8c35ce83680715c06be0d15c06be0d",
+        "is_active": true,
+        "methods": ["visa", "mastercard"],
+        "currencies": ["EUR", "GPB],
+        "payment_methods": [
+            {
+                "type": "visa",
+                "currency": "EUR",
+                "acquirer": "wirecard"
+            },
+            {
+                "type": "visa",
+                "currency": "GBP",
+                "acquirer": "wirecard"
+            },
+            {
+                "type": "mastercard",
+                "currency": "EUR",
+                "acquirer": "wirecard"
+            }
+        ],
+        "access_keys": {
+            "test": {
+                "public_key": "342070708285cd3d98606d2986cb470f",
+                "private_key": "4fe2b5ba56ff916eb4e644bad381e62e"
+            },
+            "live": {
+                "public_key": "8175823c16dd0c7b222e9ea0e7352e51",
+                "private_key": "55727e05094c17ef44649a1710b00d57"
+            }
         },
-        {
-            "type": "visa",
-            "currency": "GBP",
-            "acquirer": "wirecard"
-        },
-        {
-            "type": "mastercard",
-            "currency": "EUR",
-            "acquirer": "wirecard"
-        }
-    ],
-    "access_keys": {
-        "test": {
-            "public_key": "342070708285cd3d98606d2986cb470f",
-            "private_key": "4fe2b5ba56ff916eb4e644bad381e62e"
-        },
-        "live": {
-            "public_key": "8175823c16dd0c7b222e9ea0e7352e51",
-            "private_key": "55727e05094c17ef44649a1710b00d57"
-        }
-    },
-    "livemode": true,
-    "public_key": "8175823c16dd0c7b222e9ea0e7352e51",
-}
-```
+        "livemode": true,
+        "public_key": "8175823c16dd0c7b222e9ea0e7352e51",
+    }
+
+## Supported Rubies
+
+OmniAuth Paymill is tested under 1.8.7, 1.9.2, 1.9.3, 2.0.0, 2.1.1, Ruby
+Enterprise Edition and JRuby.
 
 ## Contributing
 
