@@ -29,7 +29,7 @@ Or install it yourself as:
 
 ## Usage
 
-You just need to tell OmniAuth about this provider. For a Rails app, you
+You just need to tell OmniAuth about this provider. For a Rails app, your
 `config/initializers/omniauth.rb` file should look like this:
 
 ```ruby
