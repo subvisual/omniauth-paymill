@@ -103,4 +103,4 @@ Note: Do not forget to add tests for the new features.
 
 ## License
 
-See [`LICENSE.txt`](https://github.com/groupbuddies/omniauth-paymill/blob/master/LICENSE.txt).
+See [`LICENSE.txt`](https://github.com/subvisual/omniauth-paymill/blob/master/LICENSE.txt).

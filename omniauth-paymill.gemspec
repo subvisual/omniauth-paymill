@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "omniauth-paymill"
   spec.version       = Omniauth::Paymill::VERSION
   spec.authors       = ["Zamith"]
-  spec.email         = ["zamith@groupbuddies.com"]
+  spec.email         = ["zamith@subvisual.co"]
   spec.description   = %q{This gem contains the Paymill Connect strategy for OmniAuth2}
   spec.summary       = %q{OmniAuth2 strategy for Paymill Connect}
-  spec.homepage      = "https://github.com/groupbuddies/omniauth-paymill"
+  spec.homepage      = "https://github.com/subvisual/omniauth-paymill"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
